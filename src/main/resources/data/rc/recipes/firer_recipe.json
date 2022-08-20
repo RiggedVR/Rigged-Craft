@@ -1,17 +1,19 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "###",
-        "###",
-        "###"
+        "rRr",
+        "r r"
     ],
     "key": {
-        "#": {
+        "r": {
             "item": "rc:havenite_ingot"
+        },
+        "R": {
+            "item": "rc:havenite_block"
         }
     },
     "result": {
-        "item": "rc:havenite_block",
+        "item": "rc:firer",
         "count": 1
     }
 }

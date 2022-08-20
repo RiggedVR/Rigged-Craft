@@ -21,6 +21,7 @@ public class ModItems {
 
     public static final Item HAVENITE = registerItem("havenite", new Item(new Item.Settings().group(ModItemsGroup.RIGGEDCRAFT)));
     public static final Item FIRED_HAVENITE = registerItem("fired_havenite", new Item(new Item.Settings().group(ModItemsGroup.RIGGEDCRAFT)));
+    public static final Item HAVENITE_INGOT = registerItem("havenite_ingot", new Item(new Item.Settings().group(ModItemsGroup.RIGGEDCRAFT)));
 
     //Helper method
     private static Item registerItem(String name, Item item){
