@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "rc:havenite_block",
+    "rc:havenite_ore",
+    "rc:deepslate_havenite_ore"
+  ]
+}
