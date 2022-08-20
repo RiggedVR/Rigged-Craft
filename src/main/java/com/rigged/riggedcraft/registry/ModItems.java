@@ -20,6 +20,7 @@ public class ModItems {
     public static final Item CAPYBARA_SPAWN_EGG = registerItem("capybara_spawn_egg", new SpawnEggItem(ModEntities.CAPYBARA, 5386520,6899224, new Item.Settings().group(ModItemsGroup.RIGGEDCRAFT)));
 
     public static final Item HAVENITE = registerItem("havenite", new Item(new Item.Settings().group(ModItemsGroup.RIGGEDCRAFT)));
+    public static final Item FIRED_HAVENITE = registerItem("fired_havenite", new Item(new Item.Settings().group(ModItemsGroup.RIGGEDCRAFT)));
 
     //Helper method
     private static Item registerItem(String name, Item item){

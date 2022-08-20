@@ -3,6 +3,7 @@
   "item.rc.spherizer" : "Spherizer",
   "item.rc.capybara_spawn_egg" : "Capybara Spawn Egg",
   "item.rc.havenite": "Havenite",
+  "item.rc.fired_havenite": "Fired Havenite",
 
   "block.rc.havenite_block" : "Havenite Block",
   "block.rc.havenite_ore": "Havenite Ore",

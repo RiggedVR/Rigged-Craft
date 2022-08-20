@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "rc:havenite"
+    },
+    "result": "rc:fired_havenite",
+    "experience": 0.1,
+    "cookingtime": 20
+}
