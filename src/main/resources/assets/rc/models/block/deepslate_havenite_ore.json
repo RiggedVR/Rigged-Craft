@@ -1,6 +1,6 @@
 {
   "parent" : "block/cube_all",
   "textures": {
-    "all": "rc:block/havenium_block"
+    "all": "rc:block/deepslate_havenite_ore"
   }
 }
