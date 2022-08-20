@@ -1,5 +1,7 @@
 {
   "item.rc.watermelon" : "Watermelon",
   "item.rc.spherizer" : "Spherizer",
-  "item.rc.capybara_spawn_egg" : "Capybara Spawn Egg"
+  "item.rc.capybara_spawn_egg" : "Capybara Spawn Egg",
+
+  "block.rc.havenium_block" : "Havenium Block"
 }
