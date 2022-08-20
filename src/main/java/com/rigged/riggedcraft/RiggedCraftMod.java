@@ -5,6 +5,7 @@ import com.rigged.riggedcraft.entity.ModEntities;
 import com.rigged.riggedcraft.entity.client.CapybaraRenderer;
 import com.rigged.riggedcraft.entity.custom.CapybaraEntity;
 import com.rigged.riggedcraft.registry.ModItems;
+import com.rigged.riggedcraft.world.feature.ModConfiguredFeatures;
 import com.rigged.riggedcraft.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -20,6 +21,8 @@ public class RiggedCraftMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModConfiguredFeatures.registerConfiguredFeatures();
+
         ModItems.registerItems();
         ModBlocks.registerModBlocks();
 
