@@ -86,6 +86,6 @@ public class SpherizerItem extends Item {
     }
 
     public SpherizerItem() {
-        super(new FabricItemSettings().group(ItemGroup.MISC).fireproof().maxCount(1).maxDamage(10));
+        super(new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT).fireproof().maxCount(1).maxDamage(10));
     }
 }

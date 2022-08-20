@@ -16,7 +16,7 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
 
     public static final Block HAVENIUM_BLOCK = registerBlock("havenium_block",
-            new Block(FabricBlockSettings.of(Material.METAL).slipperiness(.3f).strength(4f).requiresTool()), ModItemsGroup.RIGGEDCRAFT);
+            new Block(FabricBlockSettings.of(Material.METAL).slipperiness(.989f).strength(4f).requiresTool()), ModItemsGroup.RIGGEDCRAFT);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
