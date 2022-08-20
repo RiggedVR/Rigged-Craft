@@ -30,7 +30,7 @@ public class ModBlocks {
                     UniformIntProvider.create(3, 7)), ModItemsGroup.RIGGEDCRAFT);
 
     public static final Block FIRER = registerBlock("firer",
-            new FirerBlock(FabricBlockSettings.of(Material.GLASS)), ModItemsGroup.RIGGEDCRAFT);
+            new FirerBlock(FabricBlockSettings.of(Material.GLASS).nonOpaque()), ModItemsGroup.RIGGEDCRAFT);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);

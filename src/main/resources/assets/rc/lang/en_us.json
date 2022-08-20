@@ -7,5 +7,8 @@
 
   "block.rc.havenite_block" : "Havenite Block",
   "block.rc.havenite_ore": "Havenite Ore",
-  "block.rc.deepslate_havenite_ore": "Deepslate Havenite Ore"
+  "block.rc.deepslate_havenite_ore": "Deepslate Havenite Ore",
+  "block.rc.firer": "Firer",
+  "itemGroup.rc.riggedcraft": "RiggedCraft"
+
 }

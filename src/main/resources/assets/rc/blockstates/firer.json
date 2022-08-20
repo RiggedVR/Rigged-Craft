@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "rc:block/firer"
+    },
+    "facing=south": {
+      "model": "rc:block/firer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "rc:block/firer",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "rc:block/firer",
+      "y": 90
+    }
+  }
+}
