@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "rc",
-  "version": "${version}",
+  "version": "0.2.0-1.19.2",
 
   "name": "Rigged Craft",
   "description": "A mod that adds a bunch of features that Rigged wants!",
