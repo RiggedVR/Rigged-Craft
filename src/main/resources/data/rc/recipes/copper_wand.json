@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "crc",
+        " r "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:copper_block"
+        },
+        "c": {
+            "item": "minecraft:copper_ingot"
+        },
+        "r": {
+            "item": "rc:havenite_ingot"
+        }
+    },
+    "result": {
+        "item": "rc:copper_wand",
+        "count": 1
+    }
+}

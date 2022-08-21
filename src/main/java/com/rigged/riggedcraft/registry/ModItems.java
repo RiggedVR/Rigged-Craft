@@ -3,6 +3,7 @@ package com.rigged.riggedcraft.registry;
 import com.rigged.riggedcraft.RiggedCraftMod;
 import com.rigged.riggedcraft.components.FoodComponents;
 import com.rigged.riggedcraft.entity.ModEntities;
+import com.rigged.riggedcraft.items.CopperWandItem;
 import com.rigged.riggedcraft.items.ModArmourMaterials;
 import com.rigged.riggedcraft.items.ModItemsGroup;
 import com.rigged.riggedcraft.items.SpherizerItem;
@@ -10,6 +11,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 
@@ -37,6 +39,8 @@ public class ModItems {
     public static final Item HAVENITE_BOOTS = registerItem("havenite_boots",
             new ArmorItem(ModArmourMaterials.HAVENITE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
+
+    public static final Item COPPER_WAND = registerItem("copper_wand", new CopperWandItem());
 
     //Helper method
     private static Item registerItem(String name, Item item){

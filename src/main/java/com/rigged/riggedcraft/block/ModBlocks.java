@@ -1,6 +1,7 @@
 package com.rigged.riggedcraft.block;
 
 import com.rigged.riggedcraft.RiggedCraftMod;
+import com.rigged.riggedcraft.block.custom.DisenchanterBlock;
 import com.rigged.riggedcraft.block.custom.FirerBlock;
 import com.rigged.riggedcraft.items.ModItemsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -28,6 +29,9 @@ public class ModBlocks {
     public static final Block DEEPSLATE_HAVENITE_ORE = registerBlock("deepslate_havenite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemsGroup.RIGGEDCRAFT);
+
+    public static final Block DISENCHANTER = registerBlock("disenchanter",
+            new DisenchanterBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemsGroup.RIGGEDCRAFT);
 
     public static final Block FIRER = registerBlock("firer",
             new FirerBlock(FabricBlockSettings.of(Material.GLASS).nonOpaque()), ModItemsGroup.RIGGEDCRAFT);

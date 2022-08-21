@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "ROR",
+        "OOO"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:book"
+        },
+        "R": {
+            "item": "rc:havenite_block"
+        },
+        "O": {
+            "item": "minecraft:obsidian"
+        }
+    },
+    "result": {
+        "item": "rc:disenchanter",
+        "count": 1
+    }
+}

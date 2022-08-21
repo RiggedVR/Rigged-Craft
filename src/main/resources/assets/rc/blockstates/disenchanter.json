@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "rc:block/disenchanter"
+    },
+    "facing=south": {
+      "model": "rc:block/disenchanter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "rc:block/disenchanter",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "rc:block/disenchanter",
+      "y": 90
+    }
+  }
+}

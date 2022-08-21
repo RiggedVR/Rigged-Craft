@@ -9,6 +9,7 @@ import com.rigged.riggedcraft.world.feature.ModConfiguredFeatures;
 import com.rigged.riggedcraft.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
