@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "r r",
+        "rrr",
+        "rrr"
+    ],
+    "key": {
+        "r": {
+            "item": "rc:havenite_ingot"
+        }
+    },
+    "result": {
+        "item": "rc:havenite_chestplate",
+        "count": 1
+    }
+}

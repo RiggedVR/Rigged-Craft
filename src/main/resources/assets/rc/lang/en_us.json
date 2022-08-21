@@ -6,6 +6,11 @@
   "item.rc.fired_havenite": "Fired Havenite",
   "item.rc.havenite_ingot": "Havenite Ingot",
 
+  "item.rc.havenite_helmet": "Havenite Helmet",
+  "item.rc.havenite_chestplate": "Havenite Chestplate",
+  "item.rc.havenite_leggings": "Havenite Leggings",
+  "item.rc.havenite_boots": "Havenite Boots",
+
   "block.rc.havenite_block" : "Havenite Block",
   "block.rc.havenite_ore": "Havenite Ore",
   "block.rc.deepslate_havenite_ore": "Deepslate Havenite Ore",
