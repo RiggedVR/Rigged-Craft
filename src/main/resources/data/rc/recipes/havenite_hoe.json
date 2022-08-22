@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "rr",
+        " /",
+        " /"
+    ],
+    "key": {
+        "r": {
+            "item": "rc:havenite_ingot"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "rc:havenite_hoe",
+        "count": 1
+    }
+}

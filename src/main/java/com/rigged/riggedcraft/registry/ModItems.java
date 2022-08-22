@@ -4,10 +4,7 @@ import com.rigged.riggedcraft.RiggedCraftMod;
 import com.rigged.riggedcraft.block.ModBlocks;
 import com.rigged.riggedcraft.components.FoodComponents;
 import com.rigged.riggedcraft.entity.ModEntities;
-import com.rigged.riggedcraft.items.CopperWandItem;
-import com.rigged.riggedcraft.items.ModArmourMaterials;
-import com.rigged.riggedcraft.items.ModItemsGroup;
-import com.rigged.riggedcraft.items.SpherizerItem;
+import com.rigged.riggedcraft.items.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -48,6 +45,19 @@ public class ModItems {
     public static final Item CELERY = registerItem("celery", new Item(new FabricItemSettings()
             .group(ModItemsGroup.RIGGEDCRAFT)
             .food(new FoodComponent.Builder().hunger(3).saturationModifier(2f).build())));
+
+    /* HAVENITE TOOLS */
+
+    public static final Item HAVENITE_SWORD = registerItem("havenite_sword", new SwordItem(ModToolMaterials.HAVENITE, 1, 2f,
+            new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
+    public static final Item HAVENITE_AXE = registerItem("havenite_axe", new ModAxeItem(ModToolMaterials.HAVENITE, 2.5f, 1.3f,
+            new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
+    public static final Item HAVENITE_PICKAXE = registerItem("havenite_pickaxe", new ModPickaxeItem(ModToolMaterials.HAVENITE, 0, 2f,
+            new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
+    public static final Item HAVENITE_HOE = registerItem("havenite_hoe", new ModHoeItem(ModToolMaterials.HAVENITE, 0, 2f,
+            new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
+    public static final Item HAVENITE_SHOVEL = registerItem("havenite_shovel", new ShovelItem(ModToolMaterials.HAVENITE, 1, 0f,
+            new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
 
     //Helper method
     private static Item registerItem(String name, Item item){
