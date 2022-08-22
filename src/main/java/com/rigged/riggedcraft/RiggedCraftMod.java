@@ -1,5 +1,6 @@
 package com.rigged.riggedcraft;
 
+import com.mojang.logging.LogUtils;
 import com.rigged.riggedcraft.block.ModBlocks;
 import com.rigged.riggedcraft.block.entity.ModBlockEntities;
 import com.rigged.riggedcraft.effect.ModEffects;
@@ -20,7 +21,7 @@ import software.bernie.geckolib3.GeckoLib;
 
 public class RiggedCraftMod implements ModInitializer {
     public static final String MOD_ID = "rc";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final Logger LOGGER = LogUtils.getLogger();
 
 
     @Override

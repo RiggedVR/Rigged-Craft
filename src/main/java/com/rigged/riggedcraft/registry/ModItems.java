@@ -40,6 +40,10 @@ public class ModItems {
             new ArmorItem(ModArmourMaterials.HAVENITE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
 
+    /* HAVENITE LEAD */
+    public static final Item HAVENITE_LEAD = registerItem("havenite_lead",
+            new HaveniteLasso(new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT).maxDamage(50).rarity(Rarity.UNCOMMON)));
+
     /* BEANIE */
 
     public static final Item BEANIE = registerItem("beanie",

@@ -28,8 +28,16 @@
   "block.rc.deepslate_havenite_ore": "Deepslate Havenite Ore",
   "block.rc.firer": "Firer",
   "block.rc.celery_crop": "Celery Crop",
+  "block.rc.disenchanter": "Disenchanter",
   "itemGroup.rc.riggedcraft": "RiggedCraft",
+  "entity.rc.capybara": "Capybara",
 
-  "effect.rc.age": "Age"
+  "effect.rc.age": "Age",
+
+  "item.rc.havenite_lead": "Havenite Lead",
+  "rc.item.havenite_lead.tip1": "Captures and stores any creature",
+  "rc.item.havenite_lead.tip2": "Currently empty",
+  "rc.item.havenite_lead.tip3": "Contents: %s"
+
 
 }

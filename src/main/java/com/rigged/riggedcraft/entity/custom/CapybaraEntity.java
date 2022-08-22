@@ -126,6 +126,12 @@ public class CapybaraEntity extends TameableEntity implements IAnimatable {
 
         Item itemForTaming = ModItems.WATERMELON;
 
+        if(itemstack.getItem() == ModItems.HAVENITE_LEAD)
+        {
+            player.swingHand(hand);
+            return ActionResult.PASS;
+        }
+
         if(item == itemForTaming && !isTamed()){
             if(this.world.isClient()){
                 this.playSound(SoundEvents.ENTITY_HORSE_EAT, 0.2f, 1.0f);
