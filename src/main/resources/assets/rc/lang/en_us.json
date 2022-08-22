@@ -11,12 +11,16 @@
   "item.rc.havenite_leggings": "Havenite Leggings",
   "item.rc.havenite_boots": "Havenite Boots",
 
+  "item.rc.celery": "Celery",
+  "item.rc.celery_seeds": "Celery Seeds",
+
   "item.rc.copper_wand": "Copper Wand",
 
   "block.rc.havenite_block" : "Havenite Block",
   "block.rc.havenite_ore": "Havenite Ore",
   "block.rc.deepslate_havenite_ore": "Deepslate Havenite Ore",
   "block.rc.firer": "Firer",
+  "block.rc.celery_crop": "Celery Crop",
   "itemGroup.rc.riggedcraft": "RiggedCraft",
 
   "effect.rc.age": "Age"

@@ -8,5 +8,5 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemsGroup {
-    public static final ItemGroup RIGGEDCRAFT = FabricItemGroupBuilder.build(new Identifier(RiggedCraftMod.MOD_ID, "riggedcraft"), () -> new ItemStack(ModItems.WATERMELON));
+    public static final ItemGroup RIGGEDCRAFT = FabricItemGroupBuilder.build(new Identifier(RiggedCraftMod.MOD_ID, "riggedcraft"), () -> new ItemStack(ModItems.FIRED_HAVENITE));
 }

@@ -8,10 +8,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.RecipeManager;
+import net.minecraft.recipe.RecipeType;
+import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
@@ -27,6 +31,8 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 public class FirerBlock extends HorizontalFacingBlock {
 
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
@@ -41,77 +47,19 @@ public class FirerBlock extends HorizontalFacingBlock {
     @Override
     public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
         if(entity instanceof ItemEntity itemEntity){
-            if(itemEntity.getStack().getItem() == ModItems.HAVENITE){
-                FireStack(world, state, pos, entity, fallDistance, ModItems.FIRED_HAVENITE);
-            }
-            else if(itemEntity.getStack().getItem() == ModItems.FIRED_HAVENITE){
-                FireStack(world, state, pos, entity, fallDistance, ModItems.HAVENITE_INGOT);
-            }
-            else if(itemEntity.getStack().getItem() == Items.RAW_IRON){
-                FireStack(world, state, pos, entity, fallDistance, Items.IRON_INGOT);
-            }
-            else if(itemEntity.getStack().getItem() == Items.RAW_COPPER){
-                FireStack(world, state, pos, entity, fallDistance, Items.COPPER_INGOT);
-            }
-            else if(itemEntity.getStack().getItem() == Items.RAW_GOLD){
-                FireStack(world, state, pos, entity, fallDistance, Items.GOLD_INGOT);
-            }
-            else if(itemEntity.getStack().getItem() == Items.RAW_IRON_BLOCK){
-                FireStack(world, state, pos, entity, fallDistance, Items.IRON_BLOCK);
-            }
-            else if(itemEntity.getStack().getItem() == Items.RAW_GOLD_BLOCK){
-                FireStack(world, state, pos, entity, fallDistance, Items.GOLD_BLOCK);
-            }
-            else if(itemEntity.getStack().getItem() == Items.RAW_COPPER_BLOCK){
-                FireStack(world, state, pos, entity, fallDistance, Items.COPPER_BLOCK);
-            }
-            else if(itemEntity.getStack().getItem() == Items.POTATO){
-                FireStack(world, state, pos, entity, fallDistance, Items.BAKED_POTATO);
-            }
-            else if(itemEntity.getStack().getItem() == Items.BEEF){
-                FireStack(world, state, pos, entity, fallDistance, Items.COOKED_BEEF);
-            }
-            else if(itemEntity.getStack().getItem() == Items.PORKCHOP){
-                FireStack(world, state, pos, entity, fallDistance, Items.COOKED_PORKCHOP);
-            }
-            else if(itemEntity.getStack().getItem() == Items.CHICKEN){
-                FireStack(world, state, pos, entity, fallDistance, Items.COOKED_CHICKEN);
-            }
-            else if(itemEntity.getStack().getItem() == Items.MUTTON){
-                FireStack(world, state, pos, entity, fallDistance, Items.COOKED_MUTTON);
-            }
-            else if(itemEntity.getStack().getItem() == Items.SALMON){
-                FireStack(world, state, pos, entity, fallDistance, Items.COOKED_SALMON);
-            }
-            else if(itemEntity.getStack().getItem() == Items.COD){
-                FireStack(world, state, pos, entity, fallDistance, Items.COOKED_COD);
-            }
-            else if(itemEntity.getStack().getItem() == Items.RABBIT){
-                FireStack(world, state, pos, entity, fallDistance, Items.COOKED_RABBIT);
-            }
-            else if(itemEntity.getStack().getItem() == Items.COBBLESTONE){
-                FireStack(world, state, pos, entity, fallDistance, Items.STONE);
-            }
-            else if(itemEntity.getStack().getItem() == Items.STONE){
-                FireStack(world, state, pos, entity, fallDistance, Items.SMOOTH_STONE);
-            }
-            else if(itemEntity.getStack().getItem() == Items.SAND){
-                FireStack(world, state, pos, entity, fallDistance, Items.GLASS);
+
+            SimpleInventory inventory = new SimpleInventory(1);
+            inventory.setStack(0, itemEntity.getStack());
+
+            Optional<SmeltingRecipe> match = world.getRecipeManager().getFirstMatch(RecipeType.SMELTING, inventory, world);
+
+            if(match.isPresent()){
+                ItemStack outputItem = match.get().getOutput();
+                FireStack(world, state, pos, entity, fallDistance, outputItem.getItem());
+                return;
             }
             else if(itemEntity.getStack().getItem() == Items.GRAVEL){
                 FireStack(world, state, pos, entity, fallDistance, Items.FLINT);
-            }
-            else if(itemEntity.getStack().getItem() == Items.COBBLESTONE_STAIRS){
-                FireStack(world, state, pos, entity, fallDistance, Items.STONE_STAIRS);
-            }
-            else if(itemEntity.getStack().getItem() == Items.COBBLESTONE_SLAB){
-                FireStack(world, state, pos, entity, fallDistance, Items.STONE_SLAB);
-            }
-            else if(itemEntity.getStack().getItem() == Items.COBBLESTONE_WALL){
-                FireStack(world, state, pos, entity, fallDistance, Items.STONE_BRICK_WALL);
-            }
-            else if(itemEntity.getStack().getItem() == Items.COBBLED_DEEPSLATE){
-                FireStack(world, state, pos, entity, fallDistance, Items.DEEPSLATE);
             }
         }
 

@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.rigged.riggedcraft.RiggedCraftMod"
+    ],
+    "client": [
+      "com.rigged.riggedcraft.RiggedCraftClientMod"
     ]
   },
   "mixins": [

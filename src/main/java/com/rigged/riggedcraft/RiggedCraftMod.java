@@ -1,11 +1,13 @@
 package com.rigged.riggedcraft;
 
 import com.rigged.riggedcraft.block.ModBlocks;
+import com.rigged.riggedcraft.block.entity.ModBlockEntities;
 import com.rigged.riggedcraft.effect.ModEffects;
 import com.rigged.riggedcraft.entity.ModEntities;
 import com.rigged.riggedcraft.entity.client.CapybaraRenderer;
 import com.rigged.riggedcraft.entity.custom.CapybaraEntity;
 import com.rigged.riggedcraft.registry.ModItems;
+import com.rigged.riggedcraft.screen.ModScreenHandlers;
 import com.rigged.riggedcraft.world.feature.ModConfiguredFeatures;
 import com.rigged.riggedcraft.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
@@ -27,6 +29,7 @@ public class RiggedCraftMod implements ModInitializer {
 
         ModItems.registerItems();
         ModBlocks.registerModBlocks();
+        ModBlockEntities.registerBlockEntities();
 
         EntityRendererRegistry.register(ModEntities.CAPYBARA, CapybaraRenderer::new);
         registerAttributes();
@@ -34,6 +37,8 @@ public class RiggedCraftMod implements ModInitializer {
         ModWorldGen.generateModWorldGen();
 
         ModEffects.registerEffects();
+
+        ModScreenHandlers.registerAllScreenHandlers();
 
         GeckoLib.initialize();
     }

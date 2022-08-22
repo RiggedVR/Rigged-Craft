@@ -1,12 +1,14 @@
 package com.rigged.riggedcraft.block;
 
 import com.rigged.riggedcraft.RiggedCraftMod;
+import com.rigged.riggedcraft.block.custom.CeleryCropBlock;
 import com.rigged.riggedcraft.block.custom.DisenchanterBlock;
 import com.rigged.riggedcraft.block.custom.FirerBlock;
 import com.rigged.riggedcraft.items.ModItemsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
@@ -35,6 +37,13 @@ public class ModBlocks {
 
     public static final Block FIRER = registerBlock("firer",
             new FirerBlock(FabricBlockSettings.of(Material.GLASS).nonOpaque()), ModItemsGroup.RIGGEDCRAFT);
+
+    public static final Block CELERY_CROP = registerBlockWithoutItem("celery_crop",
+            new CeleryCropBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));
+
+    private static Block registerBlockWithoutItem(String name, Block block){
+        return Registry.register(Registry.BLOCK, new Identifier(RiggedCraftMod.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);

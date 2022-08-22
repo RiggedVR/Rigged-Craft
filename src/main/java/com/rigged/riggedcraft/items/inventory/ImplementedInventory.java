@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.item.inventory;
+package com.rigged.riggedcraft.items.inventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.Inventory;

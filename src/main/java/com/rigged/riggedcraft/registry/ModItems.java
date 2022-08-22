@@ -1,6 +1,7 @@
 package com.rigged.riggedcraft.registry;
 
 import com.rigged.riggedcraft.RiggedCraftMod;
+import com.rigged.riggedcraft.block.ModBlocks;
 import com.rigged.riggedcraft.components.FoodComponents;
 import com.rigged.riggedcraft.entity.ModEntities;
 import com.rigged.riggedcraft.items.CopperWandItem;
@@ -41,6 +42,12 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
 
     public static final Item COPPER_WAND = registerItem("copper_wand", new CopperWandItem());
+
+    public static final Item CELERY_SEEDS = registerItem("celery_seeds", new AliasedBlockItem(ModBlocks.CELERY_CROP,
+            new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
+    public static final Item CELERY = registerItem("celery", new Item(new FabricItemSettings()
+            .group(ModItemsGroup.RIGGEDCRAFT)
+            .food(new FoodComponent.Builder().hunger(3).saturationModifier(2f).build())));
 
     //Helper method
     private static Item registerItem(String name, Item item){
