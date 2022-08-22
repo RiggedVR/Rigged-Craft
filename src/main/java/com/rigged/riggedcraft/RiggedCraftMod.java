@@ -1,6 +1,7 @@
 package com.rigged.riggedcraft;
 
 import com.rigged.riggedcraft.block.ModBlocks;
+import com.rigged.riggedcraft.effect.ModEffects;
 import com.rigged.riggedcraft.entity.ModEntities;
 import com.rigged.riggedcraft.entity.client.CapybaraRenderer;
 import com.rigged.riggedcraft.entity.custom.CapybaraEntity;
@@ -31,6 +32,8 @@ public class RiggedCraftMod implements ModInitializer {
         registerAttributes();
 
         ModWorldGen.generateModWorldGen();
+
+        ModEffects.registerEffects();
 
         GeckoLib.initialize();
     }

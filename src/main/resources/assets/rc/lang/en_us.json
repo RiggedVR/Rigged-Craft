@@ -17,6 +17,8 @@
   "block.rc.havenite_ore": "Havenite Ore",
   "block.rc.deepslate_havenite_ore": "Deepslate Havenite Ore",
   "block.rc.firer": "Firer",
-  "itemGroup.rc.riggedcraft": "RiggedCraft"
+  "itemGroup.rc.riggedcraft": "RiggedCraft",
+
+  "effect.rc.age": "Age"
 
 }
