@@ -25,6 +25,8 @@ public class ModItems {
     public static final Item FIRED_HAVENITE = registerItem("fired_havenite", new Item(new Item.Settings().group(ModItemsGroup.RIGGEDCRAFT)));
     public static final Item HAVENITE_INGOT = registerItem("havenite_ingot", new Item(new Item.Settings().group(ModItemsGroup.RIGGEDCRAFT)));
 
+    /* HAVENITE ARMOUR */
+
     public static final Item HAVENITE_HELMET = registerItem("havenite_helmet",
             new ArmorItem(ModArmourMaterials.HAVENITE, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
@@ -38,7 +40,17 @@ public class ModItems {
             new ArmorItem(ModArmourMaterials.HAVENITE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
 
+    /* BEANIE */
+
+    public static final Item BEANIE = registerItem("beanie",
+            new BeanieArmorItem(ModArmourMaterials.BEANIE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));
+
+    /* COPPER WAND */
+
     public static final Item COPPER_WAND = registerItem("copper_wand", new CopperWandItem());
+
+    /* CELERY */
 
     public static final Item CELERY_SEEDS = registerItem("celery_seeds", new AliasedBlockItem(ModBlocks.CELERY_CROP,
             new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT)));

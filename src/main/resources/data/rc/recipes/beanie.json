@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#R#",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:white_wool"
+        },
+        "R": {
+            "item": "rc:fired_havenite"
+        }
+    },
+    "result": {
+        "item": "rc:beanie",
+        "count": 1
+    }
+}

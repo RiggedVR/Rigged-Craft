@@ -17,6 +17,9 @@ public enum ModArmourMaterials implements ArmorMaterial {
 
     HAVENITE("havenite", 27, new int[]{2, 6, 7, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.0F, 0.05F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.HAVENITE_INGOT});
+    }),
+    BEANIE("beanie", 1, new int[]{2, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.WHITE_WOOL});
     });
 
 
