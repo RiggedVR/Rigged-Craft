@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "rr ",
+        "rR ",
+        "  r"
+    ],
+    "key": {
+        "r": {
+            "item": "rc:havenite_ingot"
+        },
+        "R": {
+            "item": "rc:fired_havenite"
+        }
+    },
+    "result": {
+        "item": "rc:havenite_lead",
+        "count": 1
+    }
+}
