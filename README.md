@@ -3,6 +3,10 @@
 ## Why?
 I spent 3 days of my life learning how to make minecraft mods just so I could add capybaras & a super furnace that saves me hours...
 
+## Showcase
+
+https://www.youtube.com/watch?v=I60U2LX1JKA
+
 ## Features
 - Capybaras: a fun little tameable mob that loves watermelons!
 
