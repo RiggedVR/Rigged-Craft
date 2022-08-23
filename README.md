@@ -1,5 +1,8 @@
 # Rigged Craft
 
+## Why?
+I spent 3 days of my life learning how to make minecraft mods just so I could add capybaras & a super furnace that saves me hours...
+
 ## Features
 - Capybaras: a fun little tameable mob that loves watermelons!
 
