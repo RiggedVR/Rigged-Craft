@@ -54,6 +54,10 @@ public class ModItems {
 
     public static final Item COPPER_WAND = registerItem("copper_wand", new CopperWandItem());
 
+    /* HAVENITE CLOCK */
+    public static final Item HAVENITE_CLOCK = registerItem("havenite_clock",
+            new HaveniteClockItem(new FabricItemSettings().group(ModItemsGroup.RIGGEDCRAFT).maxCount(1)));
+
     /* CELERY */
 
     public static final Item CELERY_SEEDS = registerItem("celery_seeds", new AliasedBlockItem(ModBlocks.CELERY_CROP,
