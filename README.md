@@ -1,7 +1,7 @@
 # Rigged Craft
 
 ## Why?
-I spent 3 days of my life learning how to make minecraft mods just so I could add capybaras & a super furnace that saves me hours...
+I spent 3 days of my life learning how to make minecraft mods just so I could add capybaras & a bunch of things that let me be lazy!
 
 ## Showcase
 
